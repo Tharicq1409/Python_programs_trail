@@ -38,23 +38,23 @@ class Kodaikanal:   #class created
     name = ''
     distance = ''               #variables
 
-    def firecamp():
-        print("FireCamp at Evening time.")          #funxtion definition
+    def firecamp(self):
+        print("FireCamp at Evening time.")          #function definition
 
-    def resort():
+    def resort(self):
         print("Booked Resort at Kodaikanal")
 
 passenger1 = Kodaikanal()
 passenger1.name = "Kumar"
 
 print(passenger1.name + " enjoys" , end=' ')
-Kodaikanal.firecamp()
+passenger1.firecamp()
 
 passenger2 = Kodaikanal()
 passenger2.name = "Muthu"
 
 print(passenger2.name + " enjoys" , end=' ')
-Kodaikanal.resort()
+passenger2.resort()
 
 
 
