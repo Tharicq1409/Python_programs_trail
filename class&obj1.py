@@ -42,7 +42,7 @@ class Kodaikanal:   #class created
         print("FireCamp at Evening time.")          #function definition
 
     def resort(self):
-        print("Booked Resort at Kodaikanal")
+        print("Booked a Resort at Kodaikanal")
 
 passenger1 = Kodaikanal()
 passenger1.name = "Kumar"
@@ -53,7 +53,7 @@ passenger1.firecamp()
 passenger2 = Kodaikanal()
 passenger2.name = "Muthu"
 
-print(passenger2.name + " enjoys" , end=' ')
+print(passenger2.name  , end=' ')
 passenger2.resort()
 
 
