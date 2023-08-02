@@ -37,4 +37,4 @@ class teacher:
 t1 = teacher("Raghu",1001)
 t1.display()
 t2 = teacher("Prabhu",1002)
-t2.display()
+t2.display ()
