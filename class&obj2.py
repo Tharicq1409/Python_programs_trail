@@ -18,3 +18,9 @@ s2.name= "John"
 s2.register_no = "002"
 s2.display()'''
 
+class Fruit():
+    def __init__(self,color):
+        self.color = color
+
+apple = Fruit("Green")
+print(apple.color)
