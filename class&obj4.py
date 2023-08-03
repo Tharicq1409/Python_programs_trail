@@ -7,7 +7,7 @@ Static Methods : In Python, static methods are a type of method within a class t
                  They are defined using the @staticmethod decorator. 
                  Unlike regular methods and class methods, static methods don't receive any implicit first parameter (like self or cls).
                  Instead, they behave like regular functions that are contained within a class's namespace.
-                 
+
 Instance Methods : In Python, instance methods are the most common type of methods associated with a class. 
                    They are defined within a class and operate on the attributes and behavior of individual instances (objects) of that class.
                    Instance methods always have the instance itself (conventionally named self) as their first parameter, which allows them to access and manipulate the instance's attributes and methods.
@@ -30,11 +30,11 @@ class laptop():
     def setChargerType(cls):
         cls.Charger_type = "C Type"     #Class Method
         print("Charger Type Changed to",cls.Charger_type)
-    
+        print('\n')
     
     @staticmethod   #Decorators need to be used while using Static method
     def info():   
-        print("Information is Empty :( ") 
+        print("Info Class :" '\n' "Information is Empty :( ") 
 
 lap1=laptop()           #object Created
 lap1.setprice("49,999") #Method Call
