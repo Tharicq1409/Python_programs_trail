@@ -33,9 +33,9 @@ class teacher:
         print("Teacher Name : ",self.name)      #using a value inside function to print
         print("Register No : ",self.reg_no)
 
-t1 = teacher("Raghu",1001)          #initializing a value as a parameter
+t1 = teacher("Raghu",1001)          #initializing a value as a parameter  
 t1.display()
-t2 = teacher("Prabhu",1002)
+t2 = teacher("Prabhu",1002)         #!! if constructor is used then we need to declare parameter inside class when object is created
 t2.display ()'''
 
 class Calculator:
@@ -43,4 +43,7 @@ class Calculator:
         print("Added Value :",a+b)              #creating a parameter and using in print statement without using __init__ Constructor
 
 obj1 = Calculator()
-obj1.add(2,4)
+obj1.add(2,4)                       #!! if constructor is not used then parameters are declared inside function call
+
+
+
