@@ -44,6 +44,3 @@ class Calculator:
 
 obj1 = Calculator()
 obj1.add(2,4)                       #!! if constructor is not used then parameters are declared inside function call
-
-
-
