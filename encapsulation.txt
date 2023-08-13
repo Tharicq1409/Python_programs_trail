@@ -1,0 +1,66 @@
+Encapsulation is one of the fundamental concepts in object-oriented programming (OOP), and it refers to the practice of hiding the internal details of an object and providing a well-defined interface for interacting with it. In Python, encapsulation is achieved through the use of access modifiers and properties.
+
+There are three main access modifiers in Python:
+
+1. **Public:** Members (variables and methods) declared as public are accessible from anywhere in the program. They are not prefixed with any underscores. For example:
+   
+   ```python
+   class MyClass:
+       def __init__(self):
+           self.public_var = 10
+   
+       def public_method(self):
+           print("This is a public method.")
+   ```
+
+2. **Protected:** Members declared as protected are indicated by a single underscore prefix. While they can be accessed from outside the class, it is considered a convention to treat them as "protected" and not directly access them. For example:
+
+   ```python
+   class MyClass:
+       def __init__(self):
+           self._protected_var = 20
+   
+       def _protected_method(self):
+           print("This is a protected method.")
+   ```
+
+3. **Private:** Members declared as private are indicated by a double underscore prefix. They can't be accessed directly from outside the class. However, Python name mangling can still allow limited access. For example:
+
+   ```python
+   class MyClass:
+       def __init__(self):
+           self.__private_var = 30
+   
+       def __private_method(self):
+           print("This is a private method.")
+   ```
+
+To encapsulate and control access to class members, Python also provides the concept of properties. Properties allow you to define custom behavior when getting or setting attribute values. This can be useful to enforce certain constraints or validation before modifying attributes.
+
+Here's an example of using properties to encapsulate a class attribute:
+
+```python
+class BankAccount:
+    def __init__(self):
+        self._balance = 0
+        
+    @property
+    def balance(self):
+        return self._balance
+        
+    @balance.setter
+    def balance(self, value):
+        if value < 0:
+            print("Balance cannot be negative.")
+        else:
+            self._balance = value
+
+account = BankAccount()
+account.balance = 100
+print(account.balance)  # Output: 100
+account.balance = -50   # Output: Balance cannot be negative.
+```
+
+In this example, the `balance` attribute is encapsulated using a property to ensure that the balance cannot be set to a negative value.
+
+Encapsulation helps improve code maintainability, reduces coupling between components, and allows for better control over the behavior of objects.
